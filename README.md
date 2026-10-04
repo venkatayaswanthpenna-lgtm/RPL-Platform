@@ -1,4 +1,4 @@
-# RPL Assessment Platform Prototype
+# Eviloop
 
 An AI-assisted, evidence-driven competency assessment platform designed to help assess informal workers in India. This prototype demonstrates a scalable, consistent, and offline-capable approach to Recognition of Prior Learning (RPL).
 

@@ -15,8 +15,8 @@ export default defineConfig({
         enabled: true
       },
       manifest: {
-        name: 'RPL Assessment Platform',
-        short_name: 'RPL Platform',
+        name: 'Eviloop',
+        short_name: 'Eviloop',
         description: 'AI-assisted, evidence-driven competency assessment',
         theme_color: '#ffffff',
         icons: [
