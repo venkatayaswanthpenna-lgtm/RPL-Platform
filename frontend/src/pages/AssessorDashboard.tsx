@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Button, Card, CardContent, CardHeader, CardTitle, Badge } from '../components/ui';
 import { BrainCircuit, ShieldCheck, CheckCircle2, User, AlertCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import { useNetwork } from '../hooks/useNetwork';
 
 export default function AssessorDashboard() {

@@ -35,7 +35,7 @@ export default function AssessmentFlow() {
   };
   
   const completeAssessment = async () => {
-    const localId = await saveOfflineAssessment({
+    await saveOfflineAssessment({
       worker: formData,
       mapping: mappingResult,
       status: 'pending_review'
