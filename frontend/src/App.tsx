@@ -15,7 +15,7 @@ function App() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
               <Link to="/" className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-indigo-600 text-white rounded flex items-center justify-center font-bold text-xl">R</div>
-                <span className="text-xl font-bold text-slate-900">Eviloop</span>
+                <span className="text-xl font-bold text-slate-900">SkillSense</span>
               </Link>
               <nav className="flex space-x-4">
                 <Link to="/worker" className="text-slate-600 hover:text-indigo-600 font-medium text-sm">Worker</Link>

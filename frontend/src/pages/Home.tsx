@@ -14,7 +14,7 @@ export default function Home() {
           Prototype v1.0
         </div>
         <h1 className="text-5xl font-extrabold tracking-tight lg:text-6xl text-gray-900">
-          Eviloop Assessment, <span className="text-indigo-600">Reimagined</span>
+          SkillSense Assessment, <span className="text-indigo-600">Reimagined</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto">
           AI-assisted, evidence-driven competency assessment for India's informal workforce. 

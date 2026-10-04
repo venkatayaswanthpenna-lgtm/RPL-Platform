@@ -11,12 +11,12 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true
+      devOptions: { enabled: false, 
+        
       },
       manifest: {
-        name: 'Eviloop',
-        short_name: 'Eviloop',
+        name: 'SkillSense',
+        short_name: 'SkillSense',
         description: 'AI-assisted, evidence-driven competency assessment',
         theme_color: '#ffffff',
         icons: [
