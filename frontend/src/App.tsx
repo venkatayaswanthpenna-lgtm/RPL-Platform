@@ -10,17 +10,17 @@ function App() {
   return (
     <NetworkProvider>
       <Router>
-        <div className="min-h-screen bg-gray-50 text-gray-900 font-sans flex flex-col">
+        <div className="min-h-screen bg-slate-50 text-slate-900 font-sans flex flex-col">
           <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
               <Link to="/" className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-xl">R</div>
-                <span className="text-xl font-bold text-gray-900">Eviloop</span>
+                <div className="w-8 h-8 bg-indigo-600 text-white rounded flex items-center justify-center font-bold text-xl">R</div>
+                <span className="text-xl font-bold text-slate-900">Eviloop</span>
               </Link>
               <nav className="flex space-x-4">
-                <Link to="/worker" className="text-gray-600 hover:text-blue-600 font-medium text-sm">Worker</Link>
-                <Link to="/assessor" className="text-gray-600 hover:text-blue-600 font-medium text-sm">Assessor</Link>
-                <Link to="/admin" className="text-gray-600 hover:text-blue-600 font-medium text-sm">Admin</Link>
+                <Link to="/worker" className="text-slate-600 hover:text-indigo-600 font-medium text-sm">Worker</Link>
+                <Link to="/assessor" className="text-slate-600 hover:text-indigo-600 font-medium text-sm">Assessor</Link>
+                <Link to="/admin" className="text-slate-600 hover:text-indigo-600 font-medium text-sm">Admin</Link>
               </nav>
             </div>
           </header>

@@ -41,7 +41,7 @@ export default function AssessorDashboard() {
         <h1 className="text-2xl font-bold">Assessor Dashboard</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          <Card className="bg-blue-50 border-blue-100"><CardContent className="p-6"><div className="text-sm font-medium text-blue-600 mb-1">Pending Reviews</div><div className="text-3xl font-bold text-gray-900">12</div></CardContent></Card>
+          <Card className="bg-indigo-50 border-indigo-100"><CardContent className="p-6"><div className="text-sm font-medium text-indigo-600 mb-1">Pending Reviews</div><div className="text-3xl font-bold text-gray-900">12</div></CardContent></Card>
           <Card><CardContent className="p-6"><div className="text-sm font-medium text-gray-500 mb-1">Completed</div><div className="text-3xl font-bold text-gray-900">48</div></CardContent></Card>
           <Card><CardContent className="p-6"><div className="text-sm font-medium text-gray-500 mb-1">Avg Competency</div><div className="text-3xl font-bold text-gray-900">78%</div></CardContent></Card>
           <Card><CardContent className="p-6"><div className="text-sm font-medium text-gray-500 mb-1">Offline Sync</div><div className="text-3xl font-bold text-gray-900">{isOnline ? 'Active' : 'Pending'}</div></CardContent></Card>
@@ -87,7 +87,7 @@ export default function AssessorDashboard() {
 
       {/* Human-in-the-loop indicator */}
       <div className="flex items-center justify-center gap-4 py-4 mb-6 bg-gray-50 rounded-lg border border-gray-200">
-        <div className="flex flex-col items-center"><BrainCircuit className="text-blue-500 mb-1"/> <span className="text-xs font-semibold">AI Support</span></div>
+        <div className="flex flex-col items-center"><BrainCircuit className="text-indigo-500 mb-1"/> <span className="text-xs font-semibold">AI Support</span></div>
         <div className="h-0 w-8 border-t-2 border-dashed border-gray-300"></div>
         <div className="flex flex-col items-center"><ShieldCheck className="text-green-600 mb-1"/> <span className="text-xs font-semibold">Human Assessor</span></div>
         <div className="h-0 w-8 border-t-2 border-dashed border-gray-300"></div>
@@ -121,8 +121,8 @@ export default function AssessorDashboard() {
         </Card>
 
         {/* CENTER: AI ANALYSIS */}
-        <Card className="h-full border-blue-200">
-          <CardHeader className="bg-blue-50 border-b border-blue-100 pb-4">
+        <Card className="h-full border-indigo-200">
+          <CardHeader className="bg-indigo-50 border-b border-indigo-100 pb-4">
             <CardTitle className="text-lg flex items-center gap-2 text-blue-900">
               <BrainCircuit size={20} /> AI Analysis
             </CardTitle>
@@ -137,7 +137,7 @@ export default function AssessorDashboard() {
               <div className="flex justify-between items-end mb-4">
                 <div>
                   <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Recommended Score</p>
-                  <p className="text-4xl font-bold text-blue-600">{mockAnalysis.aiScore}<span className="text-lg text-gray-400">/{mockAnalysis.maxScore}</span></p>
+                  <p className="text-4xl font-bold text-indigo-600">{mockAnalysis.aiScore}<span className="text-lg text-gray-400">/{mockAnalysis.maxScore}</span></p>
                 </div>
                 <div className="text-right">
                   <p className="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Confidence</p>
@@ -188,7 +188,7 @@ export default function AssessorDashboard() {
                       <label 
                         key={score} 
                         className={`flex items-center gap-3 p-3 rounded-md border cursor-pointer transition-colors ${
-                          assessorScore === score ? 'border-blue-500 bg-blue-50 ring-1 ring-blue-500' : 'border-gray-200 hover:bg-gray-50'
+                          assessorScore === score ? 'border-indigo-500 bg-indigo-50 ring-1 ring-indigo-500' : 'border-gray-200 hover:bg-gray-50'
                         }`}
                       >
                         <input 
@@ -197,12 +197,12 @@ export default function AssessorDashboard() {
                           value={score} 
                           checked={assessorScore === score}
                           onChange={() => setAssessorScore(score)}
-                          className="w-4 h-4 text-blue-600"
+                          className="w-4 h-4 text-indigo-600"
                         />
                         <div className="flex-1">
                           <div className="flex justify-between items-center">
                             <span className="font-medium text-sm text-gray-900">Level {score}</span>
-                            {mockAnalysis.aiScore === score && <Badge className="bg-blue-100 text-blue-700 border-transparent text-[10px] h-5 py-0 px-2">AI Rec</Badge>}
+                            {mockAnalysis.aiScore === score && <Badge className="bg-indigo-100 text-indigo-700 border-transparent text-[10px] h-5 py-0 px-2">AI Rec</Badge>}
                           </div>
                           <span className="text-xs text-gray-500">
                             {score === 1 && "Limited understanding, requires assistance."}
@@ -219,7 +219,7 @@ export default function AssessorDashboard() {
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-gray-700">Assessor Comments (Optional)</p>
                   <textarea 
-                    className="w-full border border-gray-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none" 
+                    className="w-full border border-gray-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-indigo-500 outline-none" 
                     rows={3}
                     placeholder="E.g., Candidate independently identified..."
                   ></textarea>

@@ -40,7 +40,7 @@ export default function WorkerDashboard() {
                 <div key={i} className="flex items-start gap-4">
                   <div className="mt-0.5">
                     {step.status === 'completed' && <CheckCircle2 className="text-green-500" />}
-                    {step.status === 'in_progress' && <Clock className="text-blue-500" />}
+                    {step.status === 'in_progress' && <Clock className="text-indigo-500" />}
                     {step.status === 'pending' && <div className="w-6 h-6 rounded-full border-2 border-gray-200" />}
                   </div>
                   <div className="flex-1">
@@ -51,7 +51,7 @@ export default function WorkerDashboard() {
                   </div>
                   <div>
                     {step.status === 'completed' && <Badge variant="outline" className="text-green-700 bg-green-50 border-green-200">Done</Badge>}
-                    {step.status === 'in_progress' && <Badge className="bg-blue-100 text-blue-700 border-transparent">In Progress</Badge>}
+                    {step.status === 'in_progress' && <Badge className="bg-indigo-100 text-indigo-700 border-transparent">In Progress</Badge>}
                   </div>
                 </div>
               ))}
@@ -60,14 +60,14 @@ export default function WorkerDashboard() {
         </Card>
 
         <div className="space-y-6">
-          <Card className="bg-blue-50 border-blue-100">
+          <Card className="bg-indigo-50 border-indigo-100">
             <CardContent className="p-6">
-              <div className="text-sm font-medium text-blue-600 mb-4">Competency Profile</div>
+              <div className="text-sm font-medium text-indigo-600 mb-4">Competency Profile</div>
               <div className="flex justify-between items-end mb-2">
                 <span className="text-gray-700 font-semibold">{profile.trade}</span>
                 <span className="text-2xl font-bold text-gray-900">{profile.overallCompetency}%</span>
               </div>
-              <Progress value={profile.overallCompetency} className="h-2 bg-blue-200 [&>div]:bg-blue-600" />
+              <Progress value={profile.overallCompetency} className="h-2 bg-indigo-200 [&>div]:bg-indigo-600" />
               <p className="text-xs text-gray-500 mt-4 text-center">
                 Estimated competency based on mapped tasks. Final score requires assessor validation.
               </p>

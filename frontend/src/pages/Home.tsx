@@ -9,12 +9,12 @@ export default function Home() {
     <div className="flex flex-col items-center max-w-5xl mx-auto space-y-16 py-12">
       {/* Hero Section */}
       <div className="text-center space-y-6">
-        <div className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-sm text-blue-600 mb-4">
-          <span className="flex h-2 w-2 rounded-full bg-blue-600 mr-2"></span>
+        <div className="inline-flex items-center rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm text-indigo-600 mb-4">
+          <span className="flex h-2 w-2 rounded-full bg-indigo-600 mr-2"></span>
           Prototype v1.0
         </div>
         <h1 className="text-5xl font-extrabold tracking-tight lg:text-6xl text-gray-900">
-          Eviloop Assessment, <span className="text-blue-600">Reimagined</span>
+          Eviloop Assessment, <span className="text-indigo-600">Reimagined</span>
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto">
           AI-assisted, evidence-driven competency assessment for India's informal workforce. 
@@ -47,7 +47,7 @@ export default function Home() {
           ].map((step, i, arr) => (
             <div key={i} className="flex flex-col md:flex-row items-center w-full">
               <div className="flex flex-col items-center gap-3">
-                <div className="w-16 h-16 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-blue-600 shadow-sm relative z-10">
+                <div className="w-16 h-16 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-indigo-600 shadow-sm relative z-10">
                   {step.icon}
                 </div>
                 <span className="text-sm font-medium text-center">{step.label}</span>

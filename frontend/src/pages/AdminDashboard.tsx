@@ -58,7 +58,7 @@ export default function AdminDashboard() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4 font-mono text-sm border p-4 bg-gray-50 rounded-md">
-              <div className="flex items-center gap-4 text-blue-700"><span>1.</span> WORKER (Mobile/PWA Offline)</div>
+              <div className="flex items-center gap-4 text-indigo-700"><span>1.</span> WORKER (Mobile/PWA Offline)</div>
               <div className="pl-4 border-l-2 border-gray-300 ml-2 py-2">
                 <div>↳ Self Declaration</div>
                 <div>↳ Task Evidence</div>

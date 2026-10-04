@@ -63,10 +63,10 @@ export default function AssessmentFlow() {
       <div className="mb-8">
         <Progress value={(step / 4) * 100} className="mb-2" />
         <div className="flex justify-between text-sm text-gray-500 font-medium">
-          <span className={step >= 1 ? "text-blue-600" : ""}>Profile</span>
-          <span className={step >= 2 ? "text-blue-600" : ""}>AI Mapping</span>
-          <span className={step >= 3 ? "text-blue-600" : ""}>Practical Task</span>
-          <span className={step >= 4 ? "text-blue-600" : ""}>Evidence</span>
+          <span className={step >= 1 ? "text-indigo-600" : ""}>Profile</span>
+          <span className={step >= 2 ? "text-indigo-600" : ""}>AI Mapping</span>
+          <span className={step >= 3 ? "text-indigo-600" : ""}>Practical Task</span>
+          <span className={step >= 4 ? "text-indigo-600" : ""}>Evidence</span>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ export default function AssessmentFlow() {
               <div>
                 <Label>Where did you learn the skill?</Label>
                 <select 
-                  className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   value={formData.learning}
                   onChange={e => setFormData({...formData, learning: e.target.value})}
                 >
@@ -126,22 +126,22 @@ export default function AssessmentFlow() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <BrainCircuit className="text-blue-600" /> AI Qualification Mapping
+              <BrainCircuit className="text-indigo-600" /> AI Qualification Mapping
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="bg-blue-50 border border-blue-100 rounded-lg p-6">
+            <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-6">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h3 className="text-lg font-bold text-gray-900">Recommended Qualification</h3>
-                  <p className="text-blue-700 font-medium">{mappingResult.qualification}</p>
+                  <p className="text-indigo-700 font-medium">{mappingResult.qualification}</p>
                 </div>
-                <Badge className="text-lg px-3 py-1 bg-blue-600 text-white border-transparent">
+                <Badge className="text-lg px-3 py-1 bg-indigo-600 text-white border-transparent">
                   Match: {mappingResult.match}%
                 </Badge>
               </div>
               
-              <div className="mt-4 pt-4 border-t border-blue-200">
+              <div className="mt-4 pt-4 border-t border-indigo-200">
                 <p className="text-sm font-semibold text-gray-700 mb-2">Why this match?</p>
                 <ul className="space-y-2">
                   {mappingResult.reasons.map((r: string) => (
@@ -216,7 +216,7 @@ export default function AssessmentFlow() {
               
               <div className="mt-6 flex justify-center">
                  {/* Mocking a selected file for prototype */}
-                 <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
+                 <div className="flex items-center gap-2 bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">
                     <CheckCircle2 size={16} /> vehicle_inspection.mp4
                  </div>
               </div>
