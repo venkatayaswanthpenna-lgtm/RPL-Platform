@@ -1,6 +1,6 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button, Card, CardContent } from '../components/ui';
-import { ShieldCheck, BrainCircuit, Users, WifiOff, FileCheck2, Activity } from 'lucide-react';
+import { ShieldCheck, BrainCircuit, Users, FileCheck2, Activity } from 'lucide-react';
 
 export default function Home() {
   const navigate = useNavigate();
